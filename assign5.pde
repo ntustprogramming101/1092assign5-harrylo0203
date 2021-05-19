@@ -553,10 +553,10 @@ void addTime(float seconds){
      }
 
 boolean isHit(float ax, float ay, float aw, float ah, float bx, float by, float bw, float bh){
-      if(ax + aw > bx    // r1 right edge past r2 left
-         && ax < bx + bw    // r1 left edge past r2 right
-         && ay + ah > by    // r1 top edge past r2 bottom
-         && ay < by + bh) { // r1 bottom edge past r2 top
+      if(ax + aw > bx &&   
+         ax < bx + bw &&   
+         ay + ah > by &&   
+         ay < by + bh) {   
          return true; 
       }
         return false; 								// Requirement #3
